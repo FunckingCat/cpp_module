@@ -8,11 +8,24 @@
 class Contact
 {
 private:
-	
+	static std::string field_names[5];
+	int	index;
+	std::string fields[5];
+
+	enum Fields {
+		FirstName = 0,
+		LastName,
+		Nickname,
+		PhoneNumber,
+		DarskestSecret
+	};
 public:
-	std::string name;
-	Contact(/* args */);
+	Contact();
 	~Contact();
+
+	bool set_info(int index);
+	void print();
+	bool compare(std::string pattern);
 };
 
 #endif

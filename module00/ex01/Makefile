@@ -1,7 +1,7 @@
 NAME		= phonebook
 
 SRC			= main.cpp Contact.cpp PhoneBook.cpp
-HEADER		= Contact.hpp PhoneBook.hpp main.cpp Contact.cpp PhoneBook.cpp
+HEADER		= Contact.hpp PhoneBook.hpp main.cpp
 
 CC = g++
 FLAGS = -Wall -Werror -Wextra

@@ -10,10 +10,17 @@
 class PhoneBook
 {
 private:
+	Contact	contacts[8];
+	int		max;
+	int		current;
+	bool	find(std::string str);
 public:
-	Contact name;
-	PhoneBook(/* args */);
+	PhoneBook();
 	~PhoneBook();
+
+	void	add(void);
+	void	print(int index);
+	void	search(void);
 };
 
 #endif
