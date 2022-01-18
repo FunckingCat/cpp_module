@@ -55,6 +55,16 @@ int	main(int argc, char **argv)
 		std::cout << "Error: arguments\n"; 
 		return (1);
 	}
+	if (std::string(argv[2]).length() == 0)
+	{
+		std::cout << "Error: string to sind is empty\n"; 
+		return (1);
+	}
+	if (std::string(argv[3]).length() == 0)
+	{
+		std::cout << "Error: string to search is empty\n"; 
+		return (1);
+	}
 	infile.open(argv[1]);
 	if (!infile.is_open()) 
 	{
