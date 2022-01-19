@@ -1,7 +1,7 @@
-NAME		= fragtrap
+NAME		= diamondtrap
 
-SRC			= main.cpp ClapTrap.cpp ScavTrap.cpp FragTrap.cpp
-HEADER		= ClapTrap.hpp ScavTrap.hpp FragTrap.hpp
+SRC			= main.cpp ClapTrap.cpp ScavTrap.cpp FragTrap.cpp DiamondTrap.cpp
+HEADER		= ClapTrap.hpp ScavTrap.hpp FragTrap.hpp DiamondTrap.hpp
 
 CC = g++
 FLAGS = -Wall -Werror -Wextra
