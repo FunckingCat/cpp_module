@@ -2,11 +2,11 @@
 
 FragTrap::FragTrap(str name) : ClapTrap(name)
 {
-	std::cout << "FragTrap " << this->name << " constructed!\n";
 	this->name = name;
 	this->hitpoints = 100;
 	this->energy = 100;
 	this->attack_damage = 30;
+	std::cout << "FragTrap " << this->name << " constructed!\n";
 }
 
 FragTrap::FragTrap(FragTrap const &clap) : ClapTrap(clap)

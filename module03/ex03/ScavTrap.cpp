@@ -2,11 +2,11 @@
 
 ScavTrap::ScavTrap(str name) : ClapTrap(name)
 {
-	std::cout << "ScavTrap " << this->name << " constructed!\n";
 	this->name = name;
 	this->hitpoints = 100;
 	this->energy = 50;
 	this->attack_damage = 20;
+	std::cout << "ScavTrap " << this->name << " constructed!\n";
 }
 
 ScavTrap::ScavTrap(ScavTrap const &clap) : ClapTrap(clap)

@@ -10,6 +10,8 @@ typedef std::string str;
 
 class DiamondTrap : virtual public ScavTrap, virtual public FragTrap
 {
+private:
+	str name;
 protected:
 	DiamondTrap();
 public:
