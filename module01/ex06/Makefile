@@ -24,4 +24,11 @@ fclean: clean
 
 re: fclean all
 
+test:			$(NAME)
+				./karen DEBUG
+				./karen INFO
+				./karen WARNING
+				./karen ERROR
+				./karen FOO
+
 .PHONY: all clean fclean re 

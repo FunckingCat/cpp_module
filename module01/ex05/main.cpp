@@ -8,5 +8,6 @@ int	main(void)
 	kar.complain("INFO");
 	kar.complain("WARNING");
 	kar.complain("ERROR");
+	kar.complain("FOO");
 	return (0);
 }
