@@ -1,3 +1,6 @@
+#ifndef FRAGTRAP_HPP
+#define FRAGTRAP_HPP
+
 #include <iostream>
 #include <string>
 #include "ClapTrap.hpp"
@@ -17,3 +20,5 @@ public:
 	virtual void attack(std::string const & target);
 	void highFivesGuys(void);
 };
+
+#endif

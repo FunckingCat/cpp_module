@@ -1,3 +1,6 @@
+#ifndef DIAMONDTRAP_HPP
+#define DIAMONDTRAP_HPP
+
 #include <iostream>
 #include <string>
 #include "ScavTrap.hpp"
@@ -18,3 +21,5 @@ public:
 	virtual void attack(std::string const & target);
 	void whoAmI(void);
 };
+
+#endif
