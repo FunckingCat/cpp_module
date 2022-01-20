@@ -3,11 +3,13 @@
 
 #include <iostream>
 #include <string>
-
+class AMateria;
 #include "ICharacter.hpp"
 
 class AMateria
 {
+private:
+	AMateria();
 protected:
 	std::string type;
 public:
