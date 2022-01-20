@@ -3,17 +3,26 @@
 #include "Cat.hpp"
 #include "Dog.hpp"
 
+#define NB 4
+
 int main()
 {
-	const Animal* meta = new Animal();
-	const Animal* j = new Dog();
-	const Animal* i = new Cat();
-	meta->makeSound();
-	std::cout << j->getType() << " " << std::endl;
-	j->makeSound();
-	std::cout << i->getType() << " " << std::endl;
-	i->makeSound();
-	delete(meta);
-	delete(j);
-	delete(i);
+	Animal *animals[NB];
+
+	std::cout << "CREATING ANIMALS\n\n";
+	for (size_t i = 0; i < NB; i++)
+	{
+		if (i % 2)
+			animals[i] = new Dog();
+		else
+			animals[i] = new Cat();
+		std::cout <<  std::endl;
+	}
+
+	std::cout << "DELETING ANIMALS\n\n";
+	for (size_t i = 0; i < NB; i++)
+	{
+		delete animals[i];
+		std::cout <<  std::endl;
+	}
 }
