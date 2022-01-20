@@ -15,12 +15,12 @@ Brain::Brain(str type)
 	{
 		if (type == "Cat")
 			this->ideas[i] = str(CAT_THOUGHT);
-		else if (type == "dog")
+		else if (type == "Dog")
 			this->ideas[i] = str(DOG_THOUGHT);
 		else
 			this->ideas[i] = str(THOUGHT);
 	}
-	std::cout << "HEEY new Brain created!\n";
+	std::cout << "HEEY new " << type << " Brain created!\n";
 }
 
 Brain::~Brain()
@@ -34,6 +34,7 @@ Brain::Brain(const Brain &old)
 	{
 		this->ideas[i] = old.ideas[i];
 	}
+	std::cout << "Mmm... Brain Cloning\n";
 }
 
 Brain& Brain::operator= (const Brain &other)
@@ -42,6 +43,16 @@ Brain& Brain::operator= (const Brain &other)
 	{
 		this->ideas[i] = other.ideas[i];
 	}
+	std::cout << "Zzz... Brain Cloning\n";
 	return(*this);
 }
 
+const str	Brain::getThought(void) const
+{
+	return (this->ideas[0]);
+}
+
+void		Brain::setThought(str const th)
+{
+	this->ideas[0] = th;
+}

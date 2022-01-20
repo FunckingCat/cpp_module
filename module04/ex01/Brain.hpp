@@ -23,7 +23,7 @@ public:
 
 	Brain& operator= (const Brain &other);
 	const str	getThought(void) const;
-	void		setThought(str th);
+	void		setThought(str const th);
 };
 
 #endif

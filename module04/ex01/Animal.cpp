@@ -31,4 +31,3 @@ Animal& Animal::operator= (const Animal &other)
 	this->type = other.getType();
 	return(*this);
 }
-

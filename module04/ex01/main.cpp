@@ -9,7 +9,7 @@ int main()
 {
 	Animal *animals[NB];
 
-	std::cout << "CREATING ANIMALS\n\n";
+	std::cout << "\nCREATING ANIMALS\n";
 	for (size_t i = 0; i < NB; i++)
 	{
 		if (i % 2)
@@ -19,10 +19,27 @@ int main()
 		std::cout <<  std::endl;
 	}
 
-	std::cout << "DELETING ANIMALS\n\n";
+	std::cout << "\n----------------\n";
+	std::cout << "\nREADING THOUGHTS\n";
+	
+	Dog basic;
+	Dog clon(basic);
+
+	std::cout << basic.getBrain()->getThought() << std::endl;
+	std::cout << clon.getBrain()->getThought() << std::endl;
+
+	basic.getBrain()->setThought("Want to play a ball");
+
+	std::cout << basic.getBrain()->getThought() << std::endl;
+	std::cout << clon.getBrain()->getThought() << std::endl;
+
+	std::cout << "\n----------------\n";
+
+	std::cout << "\nDELETING ANIMALS\n";
 	for (size_t i = 0; i < NB; i++)
 	{
 		delete animals[i];
 		std::cout <<  std::endl;
 	}
+	std::cout << "\n----------------\n";
 }

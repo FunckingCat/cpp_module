@@ -30,3 +30,8 @@ Cat& Cat::operator= (const Cat &other)
 	this->type = other.getType();
 	return(*this);
 }
+
+Brain	*Cat::getBrain(void)
+{
+	return (this->brain);
+}
