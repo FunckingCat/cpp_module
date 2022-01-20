@@ -18,7 +18,7 @@ public:
 
 	str	getType(void) const;
 	Animal& operator= (const Animal &other);
-	virtual void	makeSound(void) const;
+	virtual void	makeSound(void) const = 0;
 };
 
 #endif

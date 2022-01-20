@@ -16,11 +16,6 @@ str	Animal::getType (void) const
 	return (this->type);
 }
 
-void	Animal::makeSound(void) const
-{
-	std::cout << " ** typical animal sound ** \n";
-}
-
 Animal::Animal(const Animal &old)
 {
 	this->type = old.getType();
