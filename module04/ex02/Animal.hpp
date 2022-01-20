@@ -12,7 +12,6 @@ private:
 protected:
 	str type;
 public:
-	Animal();
 	Animal(const Animal &old);
 	virtual ~Animal();
 
