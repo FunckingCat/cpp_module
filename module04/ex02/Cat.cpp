@@ -1,6 +1,6 @@
 #include "Cat.hpp"
 
-Cat::Cat() : Animal()
+Cat::Cat()
 {
 	this->type = str("Cat");
 	this->brain = new Brain(this->type);
@@ -18,7 +18,7 @@ void	Cat::makeSound(void) const
 	std::cout << "Meou - meou\n";
 }
 
-Cat::Cat(const Cat &old) : Animal(old)
+Cat::Cat(const Cat &old)
 {
 	std::cout << "WOW: Cloning Cat\n";
 	this->type = old.getType();

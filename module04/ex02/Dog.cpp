@@ -1,6 +1,6 @@
 #include "Dog.hpp"
 
-Dog::Dog() : Animal()
+Dog::Dog()
 {
 	this->type = str("Dog");
 	this->brain = new Brain(this->type);
@@ -18,7 +18,7 @@ void	Dog::makeSound(void) const
 	std::cout << "Auf - auf\n";
 }
 
-Dog::Dog(const Dog &old)  : Animal(old)
+Dog::Dog(const Dog &old)
 {
 	const Brain *br;
 	std::cout << "WOW: Cloning Dog\n";
