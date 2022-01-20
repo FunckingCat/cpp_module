@@ -15,7 +15,7 @@ public:
 	virtual ~Animal();
 
 	str	getType(void) const;
-	Animal& operator= (const Animal &other);
+	virtual Animal& operator= (const Animal &other);
 	virtual void	makeSound(void) const = 0;
 };
 
