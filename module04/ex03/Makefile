@@ -1,6 +1,6 @@
-NAME		= animal
+NAME		= interface
 
-SRC			= main.cpp ICharacter.cpp Ice.cpp AMateria.cpp Character.cpp IMateriaSource.cpp Cure.cpp MateriaSource.cpp
+SRC			= main.cpp Ice.cpp AMateria.cpp Character.cpp Cure.cpp MateriaSource.cpp
 HEADER		= ICharacter.hpp Ice.hpp AMateria.hpp Character.hpp IMateriaSource.hpp Cure.hpp MateriaSource.hpp
 
 CC = g++

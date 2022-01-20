@@ -9,6 +9,8 @@
 class Character : public ICharacter
 {
 private:
+	Character();
+
 	std::string	name;
 	int			equipped;
 	AMateria	*inventory[INV_SZ];
