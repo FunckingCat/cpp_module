@@ -1,7 +1,7 @@
 NAME		= animal
 
-SRC			= main.cpp Animal.cpp Cat.cpp Dog.cpp
-HEADER		= Animal.hpp Cat.hpp Dog.hpp
+SRC			= main.cpp Animal.cpp Cat.cpp Dog.cpp WrongAnimal.cpp WrongCat.cpp WrongDog.cpp
+HEADER		= Animal.hpp Cat.hpp Dog.hpp WrongAnimal.hpp WrongCat.hpp WrongDog.hpp
 
 CC = g++
 FLAGS = -Wall -Werror -Wextra

@@ -2,6 +2,10 @@
 #include "Cat.hpp"
 #include "Dog.hpp"
 
+#include "WrongAnimal.hpp"
+#include "WrongCat.hpp"
+#include "WrongDog.hpp"
+
 int main()
 {
 	const Animal* meta = new Animal();
@@ -15,4 +19,18 @@ int main()
 	delete(meta);
 	delete(j);
 	delete(i);
+
+	std::cout << "\nWRONG SECTION\n" << std::endl;
+
+	const WrongAnimal* wmeta = new WrongAnimal();
+	const WrongAnimal* wj = new WrongDog();
+	const WrongAnimal* wi = new WrongCat();
+	wmeta->makeSound();
+	std::cout << wj->getType() << " " << std::endl;
+	wj->makeSound();
+	std::cout << wi->getType() << " " << std::endl;
+	wi->makeSound();
+	delete(wmeta);
+	delete(wj);
+	delete(wi);
 }
