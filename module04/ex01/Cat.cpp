@@ -22,16 +22,18 @@ Cat::Cat(const Cat &old) : Animal(old)
 {
 	std::cout << "WOW: Cloning Cat\n";
 	this->type = old.getType();
+	this->brain = new Brain(*old.getBrain());
 }
 
 Cat& Cat::operator= (const Cat &other)
 {
 	std::cout << "WOW== Cloning Cat\n";
 	this->type = other.getType();
+	this->brain = new Brain(*other.getBrain());
 	return(*this);
 }
 
-Brain	*Cat::getBrain(void)
+Brain	*Cat::getBrain(void) const
 {
 	return (this->brain);
 }

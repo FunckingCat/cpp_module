@@ -22,8 +22,8 @@ int main()
 	std::cout << "\n----------------\n";
 	std::cout << "\nREADING THOUGHTS\n";
 	
-	Dog basic;
-	Dog clon(basic);
+	Cat basic;
+	Cat clon(basic);
 
 	std::cout << basic.getBrain()->getThought() << std::endl;
 	std::cout << clon.getBrain()->getThought() << std::endl;
