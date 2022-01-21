@@ -8,6 +8,7 @@ Ice::Ice():
 Ice::Ice(Ice const &other):
 	AMateria("ice")
 {
+	this->type = other.getType();
 }
 
 Ice::~Ice()
@@ -16,6 +17,7 @@ Ice::~Ice()
 
 Ice &Ice::operator=(Ice const &other)
 {
+	this->type = other.getType();
 	return (*this);
 }
 
