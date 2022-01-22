@@ -1,7 +1,9 @@
 NAME		= bureaucraft
 
-SRC			= Bureaucrat.cpp main.cpp Form.cpp
-HEADER		= Bureaucrat.hpp Form.hpp
+SRC			=	Bureaucrat.cpp main.cpp Form.cpp ShrubberyCreationForm.cpp \
+				RobotomyRequestForm.cpp PresidentialPardonForm.cpp
+HEADER		=	Bureaucrat.hpp Form.hpp ShrubberyCreationForm.hpp \
+				RobotomyRequestFor.hpp PresidentialPardonForm.hpp
 
 CC = g++
 FLAGS = -Wall -Werror -Wextra
