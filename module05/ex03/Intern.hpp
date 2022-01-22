@@ -12,7 +12,7 @@ class Intern
 private:
 	static const std::string form_types[3];
 	enum types {
-		ROBOTOMY = 1,
+		ROBOTOMY = 0,
 		PARDON,
 		SHURBERRY,
 	};
@@ -26,7 +26,6 @@ public:
 	};
 
 	Intern &operator=(Intern const &other);
-
 	Form *makeForm(std::string const &formName, std::string const &target) const;
 };
 
