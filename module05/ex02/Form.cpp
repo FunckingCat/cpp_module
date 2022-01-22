@@ -32,7 +32,17 @@ void Form::beSigned(Bureaucrat &bureaucrat)
 {
 	if (this->grade_to_sign < bureaucrat.getGrade())
 		throw Form::GradeTooLowException();
+	if (this->is_signed)
+		throw Form::SignedFormException();
 	this->is_signed = true;
+}
+
+void Form::execute(Bureaucrat const &executor) const
+{
+	if (executor.getGrade() > this->grade_to_execute)
+		throw Form::GradeTooLowException();
+	if (!this->is_signed)
+		throw Form::UnsignedFormException();
 }
 
 const char* Form::GradeTooHighException::what() const throw()
@@ -43,6 +53,16 @@ const char* Form::GradeTooHighException::what() const throw()
 const char* Form::GradeTooLowException::what() const throw()
 {
 	return "FormException: Grade too Low";
+}
+
+const char* Form::SignedFormException::what() const throw()
+{
+	return "FormException: Form already signed";
+}
+
+const char* Form::UnsignedFormException::what() const throw()
+{
+	return "FormException: Form is unsigned";
 }
 
 Form &Form::operator=(Form const &other)

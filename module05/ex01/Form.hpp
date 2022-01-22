@@ -33,6 +33,9 @@ public:
 	class GradeTooLowException: public std::exception {
 		virtual const char* what() const throw();
 	};
+	class SignedFormException: public std::exception {
+		virtual const char* what() const throw();
+	};
 };
 
 std::ostream &operator<<(std::ostream &out, Form const &form);
