@@ -99,13 +99,13 @@ int Form::getGradeToExecute(void) const
 
 std::ostream &operator<<(std::ostream &out, Form const &form)
 {
-	out << "Form " << form.getName()
-	<< " with grade to sign " << form.getGradeToSign()
-	<< " and grade to execute " << form.getGradeToExecute()
-	<< " is ";
+	out << "form " << form.getName()
+	<< " (" << form.getGradeToSign()
+	<< ", " << form.getGradeToExecute()
+	<< ", ";
 	if (form.isSigned())
-		out << "signed.";
+		out << "signed) ";
 	else
-		out << "not signed.";
+		out << "not signed) ";
 	return (out);
 }
