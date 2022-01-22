@@ -42,7 +42,7 @@ void Bureaucrat::executeForm(Form const & form)
 	else if (form.getGradeToExecute() < this->grade)
 	{
 		std::cout << this->getName() << " cannot execute " << form
-				<< " because it's grade is too low." << std::endl;
+				<< " because his grade is too low." << std::endl;
 	}
 	else
 	{

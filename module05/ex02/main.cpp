@@ -1,9 +1,13 @@
 #include "Bureaucrat.hpp"
+#include "PresidentialPardonForm.hpp"
+#include "RobotomyRequestForm.hpp"
 
 int main(void)
 {
-	Bureaucrat bob("Bob", 100);
-	Form form ("Tax", 100, 99);
+	srand(time(NULL));
+
+	Bureaucrat bob("Bob", 70);
+	RobotomyRequestForm form ("Alexey");
 	try
 	{
 		bob.signForm(form);
