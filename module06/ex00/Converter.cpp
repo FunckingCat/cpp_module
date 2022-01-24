@@ -171,13 +171,13 @@ void	Converter::print(void)
 				break;
 			case Float:
 				std::cout << this->ifloat;
-				if (this->type < Float)
+				if (this->ifloat - static_cast<float>(this->iint) == 0)
 					std::cout << ".0";
 				std::cout << "f" << std::endl;
 				break;
 			case Double:
 				std::cout << this->idouble;
-				if (this->type < Float)
+				if (this->idouble - static_cast<double>(this->iint) == 0)
 					std::cout << ".0";
 				std::cout << std::endl;
 				break;
