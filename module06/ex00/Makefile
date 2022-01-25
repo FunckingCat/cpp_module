@@ -4,7 +4,7 @@ SRC			=	main.cpp Converter.cpp
 HEADER		=	Converter.hpp
 
 CC = g++
-#FLAGS = -Wall -Werror -Wextra
+FLAGS = -Wall -Werror -Wextra
 OBJ = $(SRC:.cpp=.o)
 RM = rm -f
 
