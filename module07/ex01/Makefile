@@ -1,7 +1,7 @@
-NAME		= template
+NAME		= iter
 
 SRC			=	main.cpp 
-HEADER		=	whatever.hpp
+HEADER		=	iter.hpp
 
 CC = g++
 FLAGS = -Wall -Werror -Wextra
