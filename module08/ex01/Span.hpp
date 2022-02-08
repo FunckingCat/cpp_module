@@ -28,10 +28,14 @@ public:
 
 	void	addNumber(int numb);
 	template<typename Iter>
-	void	addNumber(Iter begin, Iter end);
-	int		shortestSpan(void);
-	int		longestSpan(void);
-
+	void	addNumber(Iter begin, Iter end) 
+	{
+		if (this->storage.size() + std::distance(begin, end) > this->size)
+			throw Span::StorageFullException();
+		this->storage.insert(begin, end);
+	}
+	size_t	shortestSpan(void) const;
+	size_t	longestSpan(void) const;
 };
 
 std::ostream &operator<<(std::ostream &out, Span const &span);
