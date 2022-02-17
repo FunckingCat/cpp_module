@@ -1,7 +1,7 @@
 #include "Account.hpp"
 #include <iostream>
 #include <iomanip>
-#include <chrono>
+#include <ctime>
 
 int Account::_nbAccounts = 0;
 int Account::_totalAmount = 0;
@@ -114,7 +114,7 @@ bool	Account::makeWithdrawal( int withdrawal )
 
 void Account::_displayTimestamp(void)
 {
-	std::time_t time_now = std::chrono::system_clock::to_time_t(std::chrono::system_clock::now());
+	std::time_t time_now = std::time(NULL);
 
 	tm utc_tm = *localtime(&time_now);
 	std::cout << std::setfill('0') << "[" 

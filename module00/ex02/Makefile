@@ -1,7 +1,7 @@
-NAME		= phonebook
+NAME		= account
 
-SRC			= main.cpp Contact.cpp PhoneBook.cpp
-HEADER		= Contact.hpp PhoneBook.hpp main.cpp
+SRC			= Account.cpp tests.cpp
+HEADER		= Account.hpp
 
 CC = clang++ -std=c++98
 FLAGS = -Wall -Werror -Wextra

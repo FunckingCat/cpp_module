@@ -4,6 +4,7 @@
 # include <iostream>
 # include <iomanip>
 # include <string>
+# include <sstream>
 
 #include "Contact.hpp"
 
@@ -13,7 +14,6 @@ private:
 	Contact	contacts[8];
 	int		max;
 	int		current;
-	bool	find(std::string str);
 public:
 	PhoneBook();
 	~PhoneBook();
