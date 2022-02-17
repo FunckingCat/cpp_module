@@ -3,7 +3,7 @@
 int	main(void)
 {
 	Zombie *zomb1 = new Zombie("Dangvar");
-	Zombie *zomb2 = new Zombie("Istgold");
+	Zombie *zomb2 = newZombie("Istgold");
 
 	randomChump("Ingvar");
 	zomb1->announce();
