@@ -9,20 +9,20 @@ Fixed::Fixed(): fixed_val(0)
 
 Fixed::Fixed(int const val)
 {
-	this->fixed_val = val << Fixed::raw;
 	std::cout << "Int constructor called\n";
+	this->fixed_val = val << Fixed::raw;
 }
 
 Fixed::Fixed(float const val)
 {
-	this->fixed_val = roundf(val * (1 << Fixed::raw));
 	std::cout << "Float constructor called\n";
+	this->fixed_val = roundf(val * (1 << Fixed::raw));
 }
 
 Fixed::Fixed(const Fixed &old)
 {
-	this->fixed_val = old.getRawBits();
 	std::cout << "Copy constructor called\n";
+	this->fixed_val = old.getRawBits();
 }
 
 Fixed::~Fixed()
@@ -30,10 +30,10 @@ Fixed::~Fixed()
 	std::cout << "Destructor called\n";
 }
 
-Fixed Fixed::operator= (const Fixed &old)
+Fixed &Fixed::operator= (const Fixed &old)
 {
-	this->fixed_val = old.getRawBits();
 	std::cout << "Assignation operator called\n";
+	this->fixed_val = old.getRawBits();
 	return (*this);
 }
 
