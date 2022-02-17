@@ -10,7 +10,7 @@ public:
 	Fixed(const Fixed &old);
 	~Fixed();
 
-	Fixed operator= (const Fixed &old);
+	Fixed &operator= (const Fixed &old);
 	int getRawBits( void ) const;
 	void setRawBits( int const raw );
 };
