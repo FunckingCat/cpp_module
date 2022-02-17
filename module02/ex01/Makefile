@@ -3,7 +3,7 @@ NAME		= fixed
 SRC			= main.cpp Fixed.cpp
 HEADER		= Kixed.hpp
 
-CC = g++
+CC= clang++ -std=c++98
 FLAGS = -Wall -Werror -Wextra
 OBJ = $(SRC:.cpp=.o)
 RM = rm -f

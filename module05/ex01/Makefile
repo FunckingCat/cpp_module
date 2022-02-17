@@ -3,7 +3,7 @@ NAME		= bureaucraft
 SRC			= Bureaucrat.cpp main.cpp Form.cpp
 HEADER		= Bureaucrat.hpp Form.hpp
 
-CC = g++
+CC= clang++ -std=c++98
 FLAGS = -Wall -Werror -Wextra
 OBJ = $(SRC:.cpp=.o)
 RM = rm -f

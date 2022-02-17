@@ -3,7 +3,7 @@ NAME		= animal
 SRC			= main.cpp Animal.cpp Cat.cpp Dog.cpp WrongAnimal.cpp WrongCat.cpp WrongDog.cpp
 HEADER		= Animal.hpp Cat.hpp Dog.hpp WrongAnimal.hpp WrongCat.hpp WrongDog.hpp
 
-CC = g++
+CC= clang++ -std=c++98
 FLAGS = -Wall -Werror -Wextra
 OBJ = $(SRC:.cpp=.o)
 RM = rm -f

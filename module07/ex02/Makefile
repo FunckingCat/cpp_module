@@ -3,7 +3,7 @@ NAME		= array
 SRC			=	main.cpp 
 HEADER		=	Array.hpp Array.tpp
 
-CC = g++
+CC= clang++ -std=c++98
 FLAGS = -Wall -Werror -Wextra
 OBJ = $(SRC:.cpp=.o)
 RM = rm -f

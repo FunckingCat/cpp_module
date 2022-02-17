@@ -3,7 +3,7 @@ NAME		= scavtrap
 SRC			= main.cpp ClapTrap.cpp ScavTrap.cpp
 HEADER		= ClapTrap.hpp ScavTrap.hpp
 
-CC = g++
+CC= clang++ -std=c++98
 FLAGS = -Wall -Werror -Wextra
 OBJ = $(SRC:.cpp=.o)
 RM = rm -f

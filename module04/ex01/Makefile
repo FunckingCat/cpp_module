@@ -3,7 +3,7 @@ NAME		= animal
 SRC			= main.cpp Animal.cpp Cat.cpp Dog.cpp Brain.cpp
 HEADER		= Animal.hpp Cat.hpp Dog.hpp Brain.hpp
 
-CC = g++
+CC= clang++ -std=c++98
 FLAGS = -Wall -Werror -Wextra
 OBJ = $(SRC:.cpp=.o)
 RM = rm -f

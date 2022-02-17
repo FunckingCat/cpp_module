@@ -3,7 +3,7 @@ NAME		= cast
 SRC			=	main.cpp
 HEADER		=	
 
-CC = g++
+CC= clang++ -std=c++98
 FLAGS = -Wall -Werror -Wextra
 OBJ = $(SRC:.cpp=.o)
 RM = rm -f

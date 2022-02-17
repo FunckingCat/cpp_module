@@ -6,7 +6,7 @@ SRC			=	Bureaucrat.cpp main.cpp Form.cpp ShrubberyCreationForm.cpp \
 HEADER		=	Bureaucrat.hpp Form.hpp ShrubberyCreationForm.hpp \
 				RobotomyRequestFor.hpp PresidentialPardonForm.hpp  Intern.hpp
 
-CC = g++
+CC= clang++ -std=c++98
 FLAGS = -Wall -Werror -Wextra
 OBJ = $(SRC:.cpp=.o)
 RM = rm -f

@@ -3,7 +3,7 @@ NAME		= hi_this_is_brain
 SRC			= main.cpp
 HEADER		= 
 
-CC = g++
+CC= clang++ -std=c++98
 FLAGS = -Wall -Werror -Wextra
 OBJ = $(SRC:.cpp=.o)
 RM = rm -f

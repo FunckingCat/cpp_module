@@ -3,7 +3,7 @@ NAME		= interface
 SRC			= main.cpp Ice.cpp AMateria.cpp Character.cpp Cure.cpp MateriaSource.cpp
 HEADER		= ICharacter.hpp Ice.hpp AMateria.hpp Character.hpp IMateriaSource.hpp Cure.hpp MateriaSource.hpp
 
-CC = g++
+CC= clang++ -std=c++98
 FLAGS = -Wall -Werror -Wextra
 OBJ = $(SRC:.cpp=.o)
 RM = rm -f

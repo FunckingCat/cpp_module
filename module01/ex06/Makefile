@@ -3,7 +3,7 @@ NAME		= karen
 SRC			= main.cpp Karen.cpp
 HEADER		= Karen.hpp
 
-CC = g++
+CC= clang++ -std=c++98
 FLAGS = -Wall -Werror -Wextra
 OBJ = $(SRC:.cpp=.o)
 RM = rm -f

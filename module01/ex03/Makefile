@@ -3,7 +3,7 @@ NAME		= attack
 SRC			= main.cpp Weapon.cpp HumanA.cpp HumanB.cpp
 HEADER		= Weapon.hpp HumanA.hpp HumanB.hpp
 
-CC = g++
+CC= clang++ -std=c++98
 FLAGS = -Wall -Werror -Wextra
 OBJ = $(SRC:.cpp=.o)
 RM = rm -f
