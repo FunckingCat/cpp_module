@@ -2,10 +2,6 @@
 
 Karen::Karen()
 {
-	this->map["DEBUG"] = DEBUG;
-	this->map["INFO"] = INFO;
-	this->map["WARNING"] = WARNING;
-	this->map["ERROR"] = ERROR;
 }
 
 Karen::~Karen()
@@ -14,24 +10,23 @@ Karen::~Karen()
 
 void Karen::complain( std::string level )
 {
-	int stat(this->map[level]);
-
-	switch (stat)
+	void	(Karen::*complaint[])( void ) = {
+		&Karen::debug,
+		&Karen::info,
+		&Karen::warning,
+		&Karen::error
+	};
+	std::string complaintLevels[] = {
+		"DEBUG",
+		"INFO",
+		"WARNING",
+		"ERROR"
+	};
+	for (int i = 0; i < 4; i++)
 	{
-	case DEBUG:
-		this->debug();
-		break;
-	case INFO:
-		this->info();
-		break;
-	case WARNING:
-		this->warning();
-		break;
-	case ERROR:
-		this->error();
-		break;
-	default:
-		break;
+		void (Karen::*selectedComplaint)( void ) = complaint[i];
+		if (level == complaintLevels[i])
+			(this->*selectedComplaint)();
 	}
 }
 
