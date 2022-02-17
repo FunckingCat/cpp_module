@@ -1,7 +1,7 @@
 NAME		= fixed
 
 SRC			= main.cpp Fixed.cpp
-HEADER		= Kixed.hpp
+HEADER		= Fixed.hpp
 
 CC= clang++ -std=c++98
 FLAGS = -Wall -Werror -Wextra
