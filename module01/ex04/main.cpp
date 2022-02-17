@@ -26,8 +26,9 @@ std::string str_replace(std::string &line, std::string &search, std::string &rep
 
 int	replace(std::ifstream &infile, std::string name, std::string search, std::string replace)
 {
-	std::ofstream outfile(name + ".replace", std::ios::trunc);
-	std::string line;
+	std::string		out_name(name + std::string(".replace"));
+	std::ofstream	outfile(out_name.data(), std::ios::trunc);
+	std::string		line;
 
 	if (!outfile.is_open())
 	{
@@ -57,7 +58,7 @@ int	main(int argc, char **argv)
 	}
 	if (std::string(argv[2]).length() == 0)
 	{
-		std::cout << "Error: string to sind is empty\n"; 
+		std::cout << "Error: string to find is empty\n"; 
 		return (1);
 	}
 	if (std::string(argv[3]).length() == 0)
