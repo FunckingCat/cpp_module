@@ -1,4 +1,4 @@
-NAME		= karen
+NAME		= karenFilter
 
 SRC			= main.cpp Karen.cpp
 HEADER		= Karen.hpp
@@ -25,10 +25,10 @@ fclean: clean
 re: fclean all
 
 test:			$(NAME)
-				./karen DEBUG
-				./karen INFO
-				./karen WARNING
-				./karen ERROR
-				./karen FOO
+				./karenFilter DEBUG
+				./karenFilter INFO
+				./karenFilter WARNING
+				./karenFilter ERROR
+				./karenFilter FOO
 
 .PHONY: all clean fclean re 

@@ -18,25 +18,17 @@ void Karen::complain( std::string level )
 
 	switch (stat)
 	{
+	case ERROR:
+		this->error();
+	case WARNING:
+		this->warning();
+	case INFO:
+		this->info();
 	case DEBUG:
 		this->debug();
 		break;
-	case INFO:
-		this->debug();
-		this->info();
-		break;
-	case WARNING:
-		this->debug();
-		this->info();
-		this->warning();
-		break;
-	case ERROR:
-		this->debug();
-		this->info();
-		this->warning();
-		this->error();
-		break;
 	default:
+		std::cout << "[ Default Msg ]"<< std::endl;
 		break;
 	}
 }
