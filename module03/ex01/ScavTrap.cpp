@@ -31,7 +31,7 @@ ScavTrap::~ScavTrap()
 	std::cout << "ScavTrap " << this->name << " distructed!\n";
 }
 
-void ScavTrap::attack(std::string const & target)
+void ScavTrap::attack(str const & target)
 {
 	if (this->energy > 0 && this->hitpoints > 0)
 	{

@@ -13,7 +13,7 @@ public:
 	ScavTrap(ScavTrap const &clap);
 	virtual ~ScavTrap();
 
-	ScavTrap &operator=(ScavTrap const &clap);
-	virtual void attack(std::string const & target);
-	void guardGate(void);
+	ScavTrap		&operator=(ScavTrap const &clap);
+	virtual void	attack(str const & target);
+	void			guardGate(void);
 };

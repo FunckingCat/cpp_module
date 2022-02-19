@@ -33,7 +33,7 @@ ClapTrap::~ClapTrap()
 	std::cout << "CalpTrap " << name << " destroyed\n";
 }
 
-void ClapTrap::attack(std::string const & target)
+void ClapTrap::attack(str const & target)
 {
 	if (this->energy > 0 && this->hitpoints > 0)
 	{
