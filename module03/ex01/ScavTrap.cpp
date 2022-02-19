@@ -2,7 +2,7 @@
 
 ScavTrap::ScavTrap(str name) : ClapTrap(name)
 {
-	std::cout << "ScavTrap " << this->name << " constructed!\n";
+	std::cout << "New ScavTrap " << this->name << " constructed!\n";
 	this->name = name;
 	this->hitpoints = 100;
 	this->energy = 50;
@@ -33,8 +33,16 @@ ScavTrap::~ScavTrap()
 
 void ScavTrap::attack(std::string const & target)
 {
-	std::cout << "ScavTrap " << this->name << " attack " << target 
-		<<", causing " << this->attack_damage << " points of damage!\n";
+	if (this->energy > 0 && this->hitpoints > 0)
+	{
+		std::cout << "ScavTrap " << this->name << " attack " << target 
+			<<", causing " << this->attack_damage << " points of damage!\n";
+		this->energy--;
+	}
+	else if (this->hitpoints <= 0)
+		std::cout << "ScavTrap " << this->name << ": cant attack, it is destroyed\n";
+	else
+		std::cout << "ScavTrap " << this->name << ": not enought energy to attack\n";
 }
 
 void ScavTrap::guardGate(void)

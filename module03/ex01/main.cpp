@@ -4,8 +4,20 @@ int	main(void)
 {
 	ScavTrap scav("Scav");
 
-	scav.attack("Shrek");
 	scav.guardGate();
-	scav.takeDamage(5);
-	scav.beRepaired(3);
+	scav.attack("This BOY");
+	scav.takeDamage(8);
+	scav.beRepaired(2);
+	scav.attack("This BOY");
+	scav.takeDamage(8);
+	scav.beRepaired(2);
+	scav.attack("This BOY");
+	scav.takeDamage(8);
+	scav.beRepaired(2);
+	scav.attack("This BOY");
+	scav.takeDamage(8);
+	scav.beRepaired(2);
+	scav.attack("This BOY");
+	scav.takeDamage(8);
+	scav.beRepaired(2);
 }
