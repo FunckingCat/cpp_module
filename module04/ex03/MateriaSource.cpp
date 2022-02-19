@@ -4,7 +4,7 @@ MateriaSource::MateriaSource():
 	amount(0)
 {
 	for (int i = 0; i < 4; i++)
-		this->sources[i] = nullptr;
+		this->sources[i] = NULL;
 }
 
 MateriaSource::MateriaSource(MateriaSource const &other):
@@ -13,7 +13,7 @@ MateriaSource::MateriaSource(MateriaSource const &other):
 	for (int i = 0; i < other.amount; i++)
 		this->learnMateria(other.sources[i]->clone());
 	for (int i = 0; i < 4; i++)
-		this->sources[i] = nullptr;
+		this->sources[i] = NULL;
 }
 
 MateriaSource::~MateriaSource()
@@ -30,13 +30,13 @@ MateriaSource &MateriaSource::operator=(MateriaSource const &other)
 	for (int i = 0; i < other.amount; i++)
 		this->learnMateria(other.sources[i]->clone());
 	for (int i = 0; i < 4; i++)
-		this->sources[i] = nullptr;
+		this->sources[i] = NULL;
 	return (*this);
 }
 
 void MateriaSource::learnMateria(AMateria *m)
 {
-	if (this->amount  == 4 || m == nullptr)
+	if (this->amount  == 4 || m == NULL)
 		return ;
 	for (int i = 0; i < this->amount; i++)
 		if (this->sources[i] == m)
@@ -49,5 +49,5 @@ AMateria* MateriaSource::createMateria(std::string const &type)
 	for (int i = 0; i < this->amount; i++)
 		if (this->sources[i]->getType() == type)
 			return (this->sources[i]->clone());
-	return (nullptr);
+	return (NULL);
 }
