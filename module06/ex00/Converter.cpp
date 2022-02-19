@@ -82,7 +82,7 @@ void	Converter::convert(void)
 void	Converter::parse(void)
 {
 	std::stringstream ss;
-	int i = 0;
+	size_t i = 0;
 
 	if (this->input.length() == 1 && !std::isdigit(this->input[0]))
 	{
