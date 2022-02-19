@@ -68,12 +68,6 @@ const char* Form::UnsignedFormException::what() const throw()
 Form &Form::operator=(Form const &other)
 {
 	this->is_signed = other.is_signed;
-	this->grade_to_execute = other.grade_to_execute;
-	this->grade_to_sign = other.grade_to_sign;
-	if (this->grade_to_sign < 1 || this->grade_to_execute < 1)
-		throw Form::GradeTooHighException();
-	if (this->grade_to_sign > 150 || this->grade_to_execute > 150)
-		throw Form::GradeTooLowException();
 	return (*this);
 }
 
