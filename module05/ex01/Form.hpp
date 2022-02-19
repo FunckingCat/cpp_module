@@ -11,10 +11,10 @@ class Form
 private:
 	Form();
 
-	std::string	const name;
-	bool		is_signed;
-	int			grade_to_sign;
-	int			grade_to_execute;
+	std::string const	name;
+	bool				is_signed;
+	int const			grade_to_sign;
+	int const			grade_to_execute;
 public:
 	Form(std::string const &name, int to_sign, int to_exec);
 	Form(Form const &other);

@@ -7,7 +7,7 @@ int main(void)
 
 	Form form1("Taxes", 100, 50);
 	std::cout << form1 << std::endl;
-	form1.beSigned(bob);
+	bob.signForm(form1);
 	std::cout << form1 << std::endl;
 
 	std::cout << "<-------------->" << std::endl;
