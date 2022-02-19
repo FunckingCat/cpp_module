@@ -3,7 +3,6 @@
 ScavTrap::ScavTrap(str name) : ClapTrap(name)
 {
 	std::cout << "New ScavTrap " << this->name << " constructed!\n";
-	this->name = name;
 	this->hitpoints = 100;
 	this->energy = 50;
 	this->attack_damage = 20;
