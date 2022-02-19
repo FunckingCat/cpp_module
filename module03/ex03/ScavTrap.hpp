@@ -1,5 +1,5 @@
-#ifndef SCAVTRAP_HPP
-#define SCAVTRAP_HPP
+#ifndef SCAVTRAP_H
+#define SCAVTRAP_H
 
 #include <iostream>
 #include <string>
@@ -16,9 +16,9 @@ public:
 	ScavTrap(ScavTrap const &clap);
 	virtual ~ScavTrap();
 
-	ScavTrap &operator=(ScavTrap const &clap);
-	virtual void attack(std::string const & target);
-	void guardGate(void);
+	ScavTrap		&operator=(ScavTrap const &clap);
+	virtual void	attack(str const & target);
+	void			guardGate(void);
 };
 
 #endif

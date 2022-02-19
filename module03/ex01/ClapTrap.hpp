@@ -1,3 +1,6 @@
+#ifndef CLAPTRAP_H
+# define CLAPTRAP_H
+
 #include <iostream>
 #include <string>
 
@@ -22,3 +25,5 @@ public:
 	void			takeDamage(unsigned int amount);
 	void			beRepaired(unsigned int amount);
 };
+
+#endif

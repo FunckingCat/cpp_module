@@ -1,5 +1,5 @@
-#ifndef FRAGTRAP_HPP
-#define FRAGTRAP_HPP
+#ifndef FRAGTRAP_H
+#define FRAGTRAP_H
 
 #include <iostream>
 #include <string>
@@ -17,7 +17,6 @@ public:
 	virtual ~FragTrap();
 
 	FragTrap &operator=(FragTrap const &clap);
-	virtual void attack(std::string const & target);
 	void highFivesGuys(void);
 };
 

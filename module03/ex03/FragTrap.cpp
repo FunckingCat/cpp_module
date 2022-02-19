@@ -2,11 +2,11 @@
 
 FragTrap::FragTrap(str name) : ClapTrap(name)
 {
+	std::cout << "New FragTrap " << this->name << " constructed!\n";
 	this->name = name;
 	this->hitpoints = 100;
 	this->energy = 100;
 	this->attack_damage = 30;
-	std::cout << "FragTrap " << this->name << " constructed!\n";
 }
 
 FragTrap::FragTrap(FragTrap const &clap) : ClapTrap(clap)
@@ -29,12 +29,6 @@ FragTrap &FragTrap::operator=(FragTrap const &clap)
 FragTrap::~FragTrap()
 {
 	std::cout << "FragTrap " << this->name << " distructed!\n";
-}
-
-void FragTrap::attack(std::string const & target)
-{
-	std::cout << "FragTrap " << this->name << " attack " << target 
-		<<", causing " << this->attack_damage << " points of damage!\n";
 }
 
 void FragTrap::highFivesGuys(void)

@@ -1,3 +1,6 @@
+#ifndef SCAVTRAP_H
+#define SCAVTRAP_H
+
 #include <iostream>
 #include <string>
 #include "ClapTrap.hpp"
@@ -17,3 +20,5 @@ public:
 	virtual void	attack(str const & target);
 	void			guardGate(void);
 };
+
+#endif

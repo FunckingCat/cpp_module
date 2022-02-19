@@ -1,3 +1,6 @@
+#ifndef FRAGTRAP_H
+#define FRAGTRAP_H
+
 #include <iostream>
 #include <string>
 #include "ClapTrap.hpp"
@@ -16,3 +19,5 @@ public:
 	FragTrap &operator=(FragTrap const &clap);
 	void highFivesGuys(void);
 };
+
+#endif
