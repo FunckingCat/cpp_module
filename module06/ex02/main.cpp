@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstdlib>
 
 class Base {
 public:
@@ -36,19 +37,19 @@ void identify(Base* p)
 void identify(Base& p)
 {
 	try {
-		dynamic_cast<A&>(p);
+		(void)dynamic_cast<A&>(p);
 		std::cout << &p << " is instance of A\n";
 		return ;
 	} catch(std::exception &ex) {};
 
 	try {
-		dynamic_cast<B&>(p);
+		(void)dynamic_cast<B&>(p);
 		std::cout << &p << " is instance of B\n";
 		return ;
 	} catch(std::exception &ex) {};
 
 	try {
-		dynamic_cast<C&>(p);
+		(void)dynamic_cast<C&>(p);
 		std::cout << &p << " is instance of C\n";
 		return ;
 	} catch(std::exception &ex) {};
