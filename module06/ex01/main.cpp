@@ -1,6 +1,8 @@
 #include <iostream>
 #include <string>
 
+typedef unsigned long uintptr_t;
+
 typedef struct s_Data
 {
 	std::string str;
