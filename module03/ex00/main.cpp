@@ -3,12 +3,20 @@
 int	main(void)
 {
 	ClapTrap clap("Clap");
-	ClapTrap trap("Trap");
 
-	clap.attack("Trap");
-	clap.takeDamage(5);
-	clap.beRepaired(3);
-
-	clap = trap;
-	clap.attack("smth");
+	clap.attack("This BOY");
+	clap.takeDamage(8);
+	clap.beRepaired(2);
+	clap.attack("This BOY");
+	clap.takeDamage(8);
+	clap.beRepaired(2);
+	clap.attack("This BOY");
+	clap.takeDamage(8);
+	clap.beRepaired(2);
+	clap.attack("This BOY");
+	clap.takeDamage(8);
+	clap.beRepaired(2);
+	clap.attack("This BOY");
+	clap.takeDamage(8);
+	clap.beRepaired(2);
 }
