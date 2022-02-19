@@ -14,6 +14,5 @@ public:
 	virtual ~FragTrap();
 
 	FragTrap &operator=(FragTrap const &clap);
-	virtual void attack(std::string const & target);
 	void highFivesGuys(void);
 };
