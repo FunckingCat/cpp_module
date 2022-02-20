@@ -1,6 +1,8 @@
 #ifndef ARRAY_HPP
 # define ARRAY_HPP
 
+#include <iostream>
+
 template<typename T>
 class Array
 {
@@ -21,6 +23,8 @@ public:
 	}
 	Array<T>( const Array<T> &other )
 	{
+		this->_size = 0;
+		this->arr = NULL;
 		*this = other;
 	}
 	~Array<T>( void )
@@ -32,7 +36,7 @@ public:
 	{
 		if (this == &other)
 			return *this;
-		if (this->_size > 0)
+		if (this->_size)
 			delete [] this->arr;
 		this->_size = other.size();
 		this->arr = new T[this->_size];

@@ -1,7 +1,7 @@
 NAME		= array
 
 SRC			=	main.cpp 
-HEADER		=	Array.hpp Array.tpp
+HEADER		=	Array.hpp
 
 CC= clang++ -std=c++98
 FLAGS = -Wall -Werror -Wextra
