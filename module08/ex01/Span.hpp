@@ -1,6 +1,9 @@
 #ifndef SPAN_HPP
 #define SPAN_HPP
 
+# include <cstdlib>
+# include <algorithm>
+# include <cmath>
 # include <iostream>
 # include <set>
 
@@ -28,7 +31,7 @@ public:
 
 	void	addNumber(int numb);
 	template<typename Iter>
-	void	Span::addNumber(Iter begin, Iter end);
+	void	addNumber(Iter begin, Iter end);
 	size_t	shortestSpan(void) const;
 	size_t	longestSpan(void) const;
 };
