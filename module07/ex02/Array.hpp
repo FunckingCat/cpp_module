@@ -52,7 +52,4 @@ public:
 	}
 };
 
-template<typename T>
-std::ostream	&operator<<( std::ostream &ostr, const Array<T> &instance );
-
 #endif
